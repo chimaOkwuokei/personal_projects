@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" class="search-bar" placeholder="Search">
+            <button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                        d="M9.5 17.085c-3.851 0-6.985-3.134-6.985-6.985s3.134-6.985 6.985-6.985 6.985 3.134 6.985 6.985-3.134 6.985-6.985 6.985zm7.518 1.332l-4.608-4.608c.743-1.01 1.186-2.272 1.186-3.625 0-3.584-2.916-6.5-6.5-6.5s-6.5 2.916-6.5 6.5 2.916 6.5 6.5 6.5c1.354 0 2.616-0.443 3.626-1.187l4.607 4.607 1.415-1.415z" />
+                    <path d="M0 0h24v24h-24z" fill="none" />
+                </svg>
+            </button>
+        </div>
+        <div class="weather loading">
+            <h2 class="city"> Weather in Denver</h2>
+            <h1 class="temp">50°C</h1>
+            <h1 class="faren">60°F</h1>
+            <div class="flex">
+                <img src="https://openweathermap.org/img/wn/10n.png" alt="" class="icon">
+                <div class="description">Cloudy</div>
+            </div>
+            <div class="humidity">Humidity: 60%</div>
+            <div class="wind">Wind speed: 6.2km/h</div>
+        </div>
+    </div>
+</body>
+
+</html>
