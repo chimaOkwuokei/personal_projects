@@ -1,0 +1,70 @@
+{
+  "intents": [
+    {
+      "tag": "catholic_beliefs",
+      "patterns": [
+        "What are the core beliefs of Catholicism?",
+        "Tell me about Catholic beliefs",
+        "What does the Catholic Church teach?"
+      ],
+      "responses": [
+        "Catholicism believes in the Trinity, the Virgin Mary, sacraments, and the authority of the Pope."
+      ]
+    },
+    {
+      "tag": "sacraments",
+      "patterns": [
+        "How many sacraments are there in the Catholic Church?",
+        "Can you list the Catholic sacraments?",
+        "What is the significance of sacraments?"
+      ],
+      "responses": [
+        "There are seven sacraments in the Catholic Church, including baptism, confirmation, Eucharist, and more."
+      ]
+    },
+    {
+      "tag": "pope",
+      "patterns": [
+        "Who is the current Pope?",
+        "Tell me about the role of the Pope in Catholicism",
+        "How is the Pope chosen?"
+      ],
+      "responses": [
+        "As of my last knowledge update in January 2022, Pope Francis is the current Pope. The Pope is the spiritual leader of the Catholic Church."
+      ]
+    },
+    {
+      "tag": "prayer",
+      "patterns": [
+        "What are some common Catholic prayers?",
+        "How should Catholics pray?",
+        "Tell me about the importance of prayer in Catholicism"
+      ],
+      "responses": [
+        "Common Catholic prayers include the Our Father, Hail Mary, and the Rosary. Prayer is central to Catholic spirituality."
+      ]
+    },
+    {
+      "tag": "morality",
+      "patterns": [
+        "What is the Catholic stance on morality?",
+        "How does Catholicism define moral principles?",
+        "Tell me about Catholic moral teachings."
+      ],
+      "responses": [
+        "Catholicism emphasizes moral teachings based on natural law, with a focus on virtues and ethical behavior."
+      ]
+    },
+    {
+      "tag": "saints",
+      "patterns": [
+        "What is the significance of saints in Catholicism?",
+        "How does the Catholic Church recognize saints?",
+        "Tell me about popular Catholic saints."
+      ],
+      "responses": [
+        "Catholics venerate saints as role models of faith. The Church canonizes individuals based on their exemplary lives."
+      ]
+    }
+  ]
+}
