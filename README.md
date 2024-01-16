@@ -1,2 +1,2 @@
 # tic_projects
-Repository containing all my codes from projects carried out at Tech Innovation Club.
+Repository containing all my codes from projects carried out at Tech Innovation Club puls other personal projects.
