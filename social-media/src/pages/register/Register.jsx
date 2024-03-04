@@ -1,4 +1,5 @@
 import "./register.scss"
+import { Link } from "react-router-dom" //use for routing pages.
 
 export default function Register() {
   return (
@@ -20,7 +21,11 @@ export default function Register() {
           <h1>Chima Okwuokei.</h1>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea animi repellendus minus incidunt. Atque adipisci error sunt voluptate fugiat culpa suscipit delectus numquam, minus voluptates sit cupiditate quasi nam id!</p>
           <span>Don't you have an account?</span>
-          <button>Login</button>
+
+          <Link to="/login">
+            <button>Login</button>
+          </Link>
+
         </div>
 
 
