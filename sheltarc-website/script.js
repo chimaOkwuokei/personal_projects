@@ -17,4 +17,5 @@ document.querySelector('#login-btn').onclick = () =>{
 window.onscroll = () => {
     navbar.classList.remove('active');
     searchForm.classList.remove('active');
+    loginForm.classList.remove('active');
 }
