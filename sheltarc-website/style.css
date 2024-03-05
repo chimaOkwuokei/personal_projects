@@ -54,6 +54,23 @@ html::-webkit-scrollbar-thumb {
 
 }
 
+.btn-home {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    background: var(--black);
+    color: var(--white);
+    cursor: pointer;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    width: 20%;
+}
+
+.btn-home:hover {
+    background: orange;
+    color: var(--black);
+}
+
 .btn:hover {
     background: orange;
     color: var(--black);
@@ -77,6 +94,7 @@ html::-webkit-scrollbar-thumb {
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
+    background: var(--white);
 }
 
 .header .logo {
@@ -230,16 +248,36 @@ html::-webkit-scrollbar-thumb {
     position: fixed;
     top: 0;
     right: 0;
-    width: 30rem;
+    width: 35rem;
     background: var(--white);
-    box-shadow: 0 0 0 100vw rgba(0, 0, 0, .7);
     height: 100%;
     text-align: center;
     z-index: 1100;
     padding: 0 2rem;
     padding-top: 5rem;
+    display: none;
+
+    &.active {
+        display: block;
+        box-shadow: 0 0 0 100vw rgba(0, 0, 0, .7);
+    }
+
+    #close-contact-info {
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        cursor: pointer;
+        font-size: 4rem;
+        color: var(--black);
+    }
+
+    #close-contact-info:hover {
+        transform: rotate(90deg);
+    }
 
     .info {
+        padding: 2rem 0;
+
         i {
             height: 5rem;
             width: 5rem;
@@ -253,9 +291,32 @@ html::-webkit-scrollbar-thumb {
             margin-bottom: .5rem;
         }
 
-        h3{
+        h3 {
             font-size: 2rem;
             padding: 1rem 0;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+    }
+
+    .share {
+        padding-top: 2rem;
+        border-top: var(--border);
+        margin-top: 1rem;
+
+        a {
+            height: 5rem;
+            width: 5rem;
+            line-height: 5rem;
+            font-size: 2rem;
+            background: var(--light-bg);
+            color: var(--black);
+            cursor: pointer;
+            text-align: center;
+            margin: 0 .3rem;
+
         }
     }
 }
@@ -267,18 +328,247 @@ html::-webkit-scrollbar-thumb {
 }
 
 
+section {
+    padding: 5rem 10%;
+}
+
+.heading {
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    padding-left: 1rem;
+    border-left: 1rem solid orange;
+}
+
+.about {
+    .row {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 3rem;
+
+        .image-about {
+            flex: 1 1 41rem;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .content {
+            flex: 1 1 41rem;
+
+            h3 {
+                font-size: 3rem;
+            }
+
+            p {
+                font-size: 1.5rem;
+                padding: 1rem 0;
+            }
+        }
+
+    }
+
+    .box-container {
+        margin-top: 3rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+        gap: 2rem;
+        align-items: flex-end;
+
+        .box {
+            text-align: center;
+            background: var(--light-bg);
+            padding: 3rem 2rem;
+
+            h3 {
+                font-size: 3rem;
+            }
+
+            p {
+                font-size: 2rem;
+                color: var(--light-color);
+                line-height: 1.5;
+            }
+
+        }
+    }
+}
+
+.home {
+    padding: 0;
+
+    .slide {
+        min-height: 60rem;
+        display: flex;
+        align-items: center;
+        position: relative;
+        background-size: cover !important;
+        background-position: center !important;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(90deg, var(--white), transparent);
+        }
+
+        .content {
+            width: 80rem;
+            position: relative;
+
+            h3 {
+                font-size: 2rem;
+                text-transform: uppercase;
+            }
+
+            p {
+                font-size: 1.5rem;
+                line-height: 2;
+                padding: 1rem 0;
+            }
+        }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        top: initial;
+        bottom: 0;
+        left: initial;
+        right: 0;
+        height: 7rem;
+        width: 7rem;
+        line-height: 7rem;
+        font-size: 3rem;
+        background: var(--white);
+    }
+
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+        background: orange;
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        font-size: 2rem;
+        color: var(--black);
+    }
+
+    .swiper-button-prev {
+        right: 7rem;
+    }
+}
+
+.services {
+    background: var(--light-bg);
+
+    .box-container {
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        gap: 2rem;
+
+        .box {
+            text-align: center;
+            padding: 3rem;
+            background: var(--white);
+            box-shadow: var(--box-shadow);
+            border: var(--border);
+
+            &:hover img {
+                transform: translateY(-1rem);
+            }
+
+            img {
+                height: 7rem;
+                margin-bottom: .5rem;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+                padding: 1rem 0;
+            }
+
+            p {
+                font-size: 1.4rem;
+                color: var(--light-color);
+                line-height: 1.5;
+            }
+        }
+
+
+    }
+}
 
 
 
+.projects {
+    background-color: var(--black);
+
+    .heading {
+        color: white;
+    }
+
+    .box-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        gap: 2rem;
+
+        .box {
+            cursor: initial;
+
+            &:hover .image img{
+                transform: scale(1.1);
+            }
+
+            .image {
+                height: 40rem;
+                overflow: hidden;
 
 
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
 
+            .content {
+                display: flex;
+                /* gap: 5rem; */
+                background: var(--white);
+                justify-content: space-between;
 
+                .info {
+                    padding: 1rem 2rem;
 
+                    h3 {
+                        font-size: 1.7rem;
+                    }
 
+                    p {
+                        font-size: 1.4rem;
+                        color: var(--light-color);
+                        line-height: 1.5;
+                    }
+                }
 
-
-
+                i{
+                    width: 7.5rem;
+                    font-size: 3rem;
+                    background: orange;
+                    color: var(--white);
+                    cursor: pointer;
+                    text-align: center;
+                    line-height: 7.5rem;
+                }
+            }
+        }
+    }
+}
 
 
 
@@ -287,6 +577,11 @@ html::-webkit-scrollbar-thumb {
     .header {
         padding: 1.5rem 2rem;
     }
+
+    section {
+        padding: 3rem 5%;
+    }
+
 }
 
 @media (max-width:991px) {
@@ -294,10 +589,17 @@ html::-webkit-scrollbar-thumb {
         font-size: 5px;
     }
 
+    section {
+        padding: 3rem 2rem;
+    }
+
+
     .header {
         #menu-btn {
             display: inline-block;
         }
+
+
 
         .navbar {
             position: absolute;
@@ -321,6 +623,30 @@ html::-webkit-scrollbar-thumb {
             }
         }
 
+    }
+}
+
+@media (max-width:768px) {
+    .header {
+        .search-form {
+            width: 90%;
+        }
+
+        .login-form {
+            width: 90%;
+        }
+    }
+
+    .home .slide {
+        justify-content: center;
+
+        .content {
+            text-align: center;
+
+            h3 {
+                font-size: 3rem;
+            }
+        }
     }
 }
 

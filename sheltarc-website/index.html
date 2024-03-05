@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,12 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- header section starts -->
     <header class="header">
@@ -16,7 +21,7 @@
         <!-- logo -->
         <a href="#" class="logo">
             <!-- <img src="" alt="n/a"> -->
-            SHELT-<span>ARC</span>
+            Shelt<span>ARC</span>
         </a>
 
         <!-- navbar -->
@@ -61,6 +66,10 @@
 
     <div class="contact-info">
 
+        <div id="close-contact-info" class="fas fa-times">
+
+        </div>
+
         <div class="info">
             <i class="fas fa-phone"></i>
             <h3>Phone Number</h3>
@@ -76,24 +85,276 @@
         <div class="info">
             <i class="fas fa-map-marker-alt"></i>
             <h3>Office Address</h3>
-            <p>Ikota Shopping Complex, Lekki, Lagos.</p>
+            <p>I138 Ikota Shopping Complex, Lekki, Lagos.</p>
         </div>
 
         <div class="share">
             <a href="#" class="fab fa-facebook-f"></a>
             <a href="#" class="fab fa-twitter"></a>
             <a href="#" class="fab fa-instagram"></a>
-            <a href="#" class="fab fa-linkedln"></a>
+            <a href="#" class="fab fa-linkedin"></a>
         </div>
 
     </div>
-    
+    <!-- end of header, part with the "logo", and forms, login, info, navbar and search -->
+
+    <!-- home section begins -->
+    <section class="home" id="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+
+
+                <section class="swiper-slide slide" style="background: url(assets/architecture3.jpg) no-repeat;">
+                    <div class="content">
+                        <h3>DESIGN | CONSTRUCTION | DEVELOPMENT</h3>
+
+                        <!-- to change later -->
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque nemo quas sequi dolorem
+                            iusto dolore similique saepe mollitia fugiat consectetur iste dolores eaque, magnam
+                            aspernatur, quam commodi reprehenderit asperiores quis.</p>
+
+                        <a href="#about" class="btn-home">Get Started</a>
+                    </div>
+                </section>
+
+                <section class="swiper-slide slide" style="background: url(assets/imagetolife.jpg) no-repeat;">
+                    <div class="content">
+                        <h3>Bringing your designs to life...</h3>
+
+                        <!-- to change later -->
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque nemo quas sequi dolorem
+                            iusto dolore similique saepe mollitia fugiat consectetur iste dolores eaque, magnam
+                            aspernatur, quam commodi reprehenderit asperiores quis.</p>
+
+                        <a href="#about" class="btn-home">Get Started</a>
+                    </div>
+                </section>
+
+
+                <section class="swiper-slide slide" style="background: url(assets/architecture2.webp) no-repeat;">
+                    <div class="content">
+                        <h3>From concept to design</h3>
+
+                        <!-- to change later -->
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque nemo quas sequi dolorem
+                            iusto dolore similique saepe mollitia fugiat consectetur iste dolores eaque, magnam
+                            aspernatur, quam commodi reprehenderit asperiores quis.</p>
+
+                        <a href="#about" class="btn-home">Get Started</a>
+                    </div>
+                </section>
+
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    <!-- end of home section -->
+
+    <!-- about starts -->
+    <section class="about" id="about">
+        <h1 class="heading"> About Us </h1>
+
+        <div class="row">
+            <div class="image-about">
+                <img src="assets/architecture1.jpg" alt="">
+            </div>
+
+            <div class="content">
+                <h3>At Shelt-Arc building services, yours is to request, ours is to deliver</h3>
+                <p>Founded in blah blah fill up later</p>
+                <a href="#services" class="btn-home"> Read More</a>
+            </div>
+        </div>
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>10+</h3>
+                <p>years of experience</p>
+            </div>
+
+            <div class="box">
+                <h3>100+</h3>
+                <p>projects completed</p>
+            </div>
+
+            <div class="box">
+                <h3>100+</h3>
+                <p>satisfied clients</p>
+            </div>
+
+            <div class="box">
+                <h3>50+</h3>
+                <p>active workers</p>
+            </div>
+
+        </div>
+    </section>
+    <!-- about ends -->
+
+    <!-- services section starts -->
+    <section class="services" id="services">
+
+        <h1 class="heading">Our Services</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="assets/architecture1.jpg" alt="">
+                <h3>Building Construction</h3>
+                <p>Lorem ipsum dolor, atis deserunt mollitia voluptatum expedita soluta excepturi incidunt?</p>
+            </div>
+
+            <div class="box">
+                <img src="assets/architecture2.webp" alt="">
+                <h3>Building Renovation</h3>
+                <p>Lorem ipsum dolor, atis deserunt mollitia voluptatum expedita soluta excepturi incidunt?</p>
+            </div>
+
+            <div class="box">
+                <img src="assets/architecture3.jpg" alt="">
+                <h3>Architectural Designs</h3>
+                <p>Lorem ipsum dolor, atis deserunt mollitia voluptatum expedita soluta excepturi incidunt?</p>
+            </div>
+
+            <div class="box">
+                <img src="assets/architecture3.jpg" alt="">
+                <h3>Material Supply</h3>
+                <p>Lorem ipsum dolor, atis deserunt mollitia voluptatum expedita soluta excepturi incidunt?</p>
+            </div>
+
+            <div class="box">
+                <img src="assets/architecture3.jpg" alt="">
+                <h3>Construction Consultancy</h3>
+                <p>Lorem ipsum dolor, atis deserunt mollitia voluptatum expedita soluta excepturi incidunt?</p>
+            </div>
+
+            <div class="box">
+                <img src="assets/architecture3.jpg" alt="">
+                <h3>Interior Design</h3>
+                <p>Lorem ipsum dolor, atis deserunt mollitia voluptatum expedita soluta excepturi incidunt?</p>
+            </div>
+
+            <div class="box">
+                <img src="assets/architecture3.jpg" alt="">
+                <h3>Building Maintainance</h3>
+                <p>Lorem ipsum dolor, atis deserunt mollitia voluptatum expedita soluta excepturi incidunt?</p>
+            </div>
+        </div>
+    </section>
+    <!-- services section starts -->
+
+    <!-- projects section starts -->
+    <section class="projects" id="projects">
+
+        <h1 class="heading"> Our Projects </h1>
+
+        <div class="box-container">
+
+            <a href="assets/architecture1.jpg" class="box">
+                <div class="image">
+                    <img src="assets/architecture1.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="info">
+                        <h3>Dream Home</h3>
+                        <p>Construction, Design</p>
+                    </div>
+                    <i class="fas fa-plus"></i>
+                </div>
+            </a>
+
+            <a href="assets/architecture1.jpg" class="box">
+                <div class="image">
+                    <img src="assets/architecture1.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="info">
+                        <h3>Dream Home</h3>
+                        <p>Construction, Design</p>
+                    </div>
+                    <i class="fas fa-plus"></i>
+                </div>
+            </a>
+
+            <a href="assets/architecture1.jpg" class="box">
+                <div class="image">
+                    <img src="assets/architecture1.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="info">
+                        <h3>Dream Home</h3>
+                        <p>Construction, Design</p>
+                    </div>
+                    <i class="fas fa-plus"></i>
+                </div>
+            </a>
+
+            <a href="assets/architecture1.jpg" class="box">
+                <div class="image">
+                    <img src="assets/architecture1.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="info">
+                        <h3>Dream Home</h3>
+                        <p>Construction, Design</p>
+                    </div>
+                    <i class="fas fa-plus"></i>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- project section ends -->
+
+
+    <!-- reviews section starts, may not be added -->
+    <section class="reviews">
+
+        <h1 class="heading">Client Reviews</h1>
+        <div class="reviews-slider">
+            <div class="w">
+                <div class="slide">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing eli.</p>
+                    <div class="user">
+                        <img src="assets/architecture3.jpg" alt="">
+                        <div class="info">
+                            <h3>Chima Okwuokei</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- reviews section ends, may not be added -->
 
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
 
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 
     <script src="script.js"></script>
+
+    <script>
+        //light gallery is used to add the close button and download button to the image
+        lightGallery(document.querySelector('.projects .box-container'));
+    </script>
 </body>
+
 </html>
