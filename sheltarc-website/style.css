@@ -570,10 +570,130 @@ section {
     }
 }
 
+.reviews{
+    .slide{
+
+        p{
+            padding: 1.5rem;
+            background: var(--light-bg);
+            position: relative;
+            margin-bottom: 3rem;
+
+            &::before{
+                content: '';
+                position: absolute;
+                bottom: -1rem; left: 2rem;
+                height: 2rem;
+                width: 2rem;
+                background: var(--light-bg);
+
+                /* produces that pointing down stuff */
+                transform: rotate(45deg); 
+
+                /* graph text */
+                font-size: 1.4rem;
+                color: var(--light-color);
+                line-height: 1.5;
+            }
+        }
+
+        .user{
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+
+            img{
+                height: 7rem;
+                width: 7rem;
+            }
+
+            h3{
+                font-size: 1.5rem;
+            }
+
+            .stars{
+                padding-top: .5rem;
+
+                i{
+                    font-size: 1.5rem;
+                    color: var(--yellow);
+                }
+            }
+        }
+    }
+}
+
+.contact{
+    background: var(--black);
+
+    .heading{
+        color: var(--white);
+    }
+
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+
+    .map{
+        flex: 1 1 41rem;
+        width: 100%;
+    }
+
+    form{
+        flex: 1 1 41rem;
+        background: var(--white);
+        padding: 2rem;
+
+        h3{
+            font-size: 2.5rem;
+            padding: 1rem;
+        }
+        .box{
+            margin: .7rem 0;
+            width: 100%;
+            padding: 1.5rem 0;
+            border-bottom: var(--border);
+            font-size: 1.6rem;
+            color: var(--light-bg);
+
+            &:focus{
+                border-color: var(--yellow);
+            }
+        }
+
+        textarea{
+            height: 15rem;
+            resize: none;
+        }
+    }
+}
+
+.logo-container{
+    img{
+        height: 7rem;
+        width: 7rem;
+    }
+}
+
+.footer{
+    text-align: center;
+    .credit{
+        font-size: 2rem;
+        margin-top: 2rem;
+        padding-top: 2rem;
+    }
+
+    span{
+        color: var(--yellow);
+    }
+}
 
 
-/* //media queries: for different devices*/
-@media (max-width:1200px) {
+
+/* Media queries for different devices */
+@media (max-width: 1200px) {
     .header {
         padding: 1.5rem 2rem;
     }
@@ -581,10 +701,9 @@ section {
     section {
         padding: 3rem 5%;
     }
-
 }
 
-@media (max-width:991px) {
+@media (max-width: 991px) {
     html {
         font-size: 5px;
     }
@@ -593,14 +712,7 @@ section {
         padding: 3rem 2rem;
     }
 
-
     .header {
-        #menu-btn {
-            display: inline-block;
-        }
-
-
-
         .navbar {
             position: absolute;
             top: 99%;
@@ -609,12 +721,10 @@ section {
             background: #fff;
             border-top: var(--border);
             border-bottom: var(--border);
-            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-            /* Initial clip-path */
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); /* Initial clip-path */
 
             &.active {
-                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-                /* Updated clip-path for active state */
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* Updated clip-path for active state */
             }
 
             a {
@@ -622,35 +732,25 @@ section {
                 margin: 2em;
             }
         }
-
     }
 }
 
-@media (max-width:768px) {
-    .header {
-        .search-form {
-            width: 90%;
-        }
-
-        .login-form {
-            width: 90%;
-        }
+@media (max-width: 768px) {
+    .header .search-form,
+    .header .login-form {
+        width: 90%;
     }
 
-    .home .slide {
-        justify-content: center;
+    .home .slide .content {
+        text-align: center;
 
-        .content {
-            text-align: center;
-
-            h3 {
-                font-size: 3rem;
-            }
+        h3 {
+            font-size: 3rem;
         }
     }
 }
 
-@media (max-width:450px) {
+@media (max-width: 450px) {
     html {
         font-size: 2.5px;
     }
